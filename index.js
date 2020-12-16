@@ -1,6 +1,6 @@
 const store = Redux.createStore(ReduceCounter);
 
-const render = () => ReactDOM.render(
+ReactDOM.render(
 	<Counter
 		store={store}
 		onIncrement={() => store.dispatch({ type: 'INC' })}
@@ -8,5 +8,3 @@ const render = () => ReactDOM.render(
 	/>,
 	document.getElementById('root')
 )
-
-render()
